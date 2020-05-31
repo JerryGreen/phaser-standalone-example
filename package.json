@@ -2,13 +2,23 @@
   "name": "phaser",
   "version": "0.1.0",
   "private": true,
+  "main": "app/background.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "WEB=true next dev",
     "build": "next build",
-    "start": "next start"
+    "dev-desktop": "nextron -p 3000",
+    "build-desktop": "nextron build",
+    "start": "next start",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
+    "babel-loader": "8.1.0",
+    "electron": "9.0.0",
+    "electron-builder": "22.7.0",
+    "electron-serve": "1.0.0",
+    "electron-store": "5.1.1",
     "next": "9.4.4",
+    "nextron": "5.14.6",
     "phaser": "3.23.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"

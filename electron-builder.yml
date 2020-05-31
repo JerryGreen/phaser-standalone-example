@@ -1,0 +1,12 @@
+appId: me.jerrygreen.neural-world
+productName: A phaser game
+copyright: Copyright © 2020 Jerry Green
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null
