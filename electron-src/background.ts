@@ -21,6 +21,7 @@ if (isProd) {
     },
     backgroundColor: '#000',
     fullscreen: true,
+    frame: false,
   })
 
   if (isProd) {
